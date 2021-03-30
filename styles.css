@@ -1,0 +1,42 @@
+/* Default & Mobile View */
+
+body {
+    max-width: 1280px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card {
+    margin: 20px 10px;
+    padding-top: 5px;
+   
+}
+
+/* Tablet View 2 per row */
+
+@media (min-width: 768px) {
+    .card {
+        flex-wrap: wrap;
+        width: calc(50% - 20px);
+    }
+	
+}
+
+
+/* Desktop View 3 per row */
+
+@media (min-width: 1024px) {
+
+    .card {
+        flex-wrap: wrap;
+        width: calc(30% - 20px);  
+
+    }
+	
+}
